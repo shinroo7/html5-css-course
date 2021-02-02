@@ -1,0 +1,19 @@
+/* Last Rule And Specificity */
+/* When there is reprtitive elements, css takes the last one (execute the colour crimson). Need to be careful. */
+p {
+    color: blue;
+}
+
+p {
+    color: crimson;
+}
+
+/* When adding the class to the paragraph (i.e. <p class = red >), then even css last rule doesn't apply. The paragraph text stays red. [.red { color:red }  p { color:blue }]  */
+/* Can google CSS Specificity measurement */
+
+
+/* Universal Selector */
+/*  Use * to represent all */
+/*     * { color:blue }      */
+/* But the universal selector's hierarchy is the lowest */
+
