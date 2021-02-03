@@ -1,0 +1,104 @@
+/* CSS Typography - layout of projects
+Font-Family
+Font-Stack Generic Fonts
+Google Fonts
+Font-Weight Font-Style
+Text-Align And Text-Indent
+More Text Properties
+*/
+
+
+/* 01. font-size font-family
+font-stake generic-family
+serif, sans-serif, cursive, fantasy, monospace */
+/* If there is no Courier New, it will choose Courier, and then monospace */
+/* body {
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+
+/* 02. Google Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tangerine&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+h1 {
+    font-family: 'Tangerine', cursive;
+} */
+
+
+/* 03. font-weight font-style */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tangerine&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic; 
+}
+.main {
+    font-family: 'Tangerine', cursive;
+}
+/* usually don't need to set normal, cuz the default is normal, but when whole body's font-style is set and you want to differentiate it from others, normal can be used */
+/* .subheading {
+    font-style: normal;
+} */
+/* bold -> maximum 700, lighter -> minimum 400 (google font setting) */
+/* .one {
+    font-weight: bold;
+}
+.two {
+    font-weight: lighter;
+}  */
+
+
+/* 04. text-align text-indent (default is left) */ 
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tangerine&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+}
+.main {
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+}
+.subheading {
+}
+.one {
+    text-indent: 20px;
+}
+.two {
+    text-align: left;
+} */
+
+
+/* 05. line-height, letter-spacing, word-spacing, text-transform, text-decoration */
+
+a {
+    font-size: 40px;
+    text-decoration: none;
+}
+body {
+    text-transform: uppercase;
+}
+h1 {
+    text-transform:lowercase;
+    text-decoration: line-through;
+}
+.one {
+    line-height: 1.5em;
+}
+.two {
+    letter-spacing: 5px;
+    text-decoration: overline;
+    line-height: 2em;
+}
+.three {
+    word-spacing: 20px;
+    text-decoration: underline;
+}
+
+
