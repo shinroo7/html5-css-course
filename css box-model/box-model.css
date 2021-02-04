@@ -1,0 +1,100 @@
+/* CSS Box-Model
+Padding
+Margin
+Border
+Border-Radius, Negative Margin
+Outline Property
+*/
+
+/* 01. Padding - the space around the content (text), clockwise (top, right, bottom, left)*/
+/* h1 {
+    background: red;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 25px;
+    padding-right: 50px;
+}
+p {
+    background: blue;
+    padding: 50px;
+    padding: 30px 50px 60px 25px;
+} */
+
+
+/* 02. Margin - the space between window edge and the padding, it has a default value and you can set the value to 0 and make the items connect with each other without a gap*/
+/* h1 {
+    background: red;
+    padding: 20px;
+    margin-bottom: 0;
+    margin: 70px;
+}
+p {
+    background: blue;
+    padding: 20px;
+    margin-top: 0;
+    margin: 100px 20px 20px 50px;
+} */
+
+
+/* 03. Border */
+/* h1 {
+    background: red;
+    padding: 20px;
+    margin: 70px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: chartreuse;
+    border-bottom-style: dashed; 
+    border-bottom-width: 5px;
+    border-bottom-color: seagreen;
+}
+p {
+    background: blue;
+    padding: 20px;
+    border: 13px solid yellow;
+    margin: 100px 20px 20px 50px;
+} */
+
+
+/* 04. Border-Radius, Negative Margin */
+/* h1 {
+    background: red;
+    padding: 20px;
+    margin: 70px;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+p {
+    background: blue;
+    padding: 20px;
+    border: 13px solid green;
+    border-radius: 50%;
+    margin: -100px;
+} */
+
+
+/* 05. Outline Property - outline, offset */
+.buttons {
+    margin: 3rem;
+}
+a {
+    background: greenyellow;
+    text-decoration: none;
+    padding: 1.2rem 1.5rem;
+    color: hotpink;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 20px;
+}
+#one {
+    border: 0.2rem solid black;
+}
+#two {
+    outline-width: 0.2rem;
+    outline-style: solid;
+    outline-color: black;
+    outline: 0.2rem solid #222;
+    outline-offset: 10px;
+    /* outline-offset: -10px; */
+}
+
