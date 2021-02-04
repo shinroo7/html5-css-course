@@ -1,0 +1,27 @@
+/* CSS Display Property
+Basic Horizontal Centering
+Mobile Navbar Example
+Box-Sizing Border-Box
+Display Inline-Block
+Display:none, Opacity, Visibility
+*/
+
+
+/* 01 Default display property
+Block : Always starts a new line and takes full width
+Inline : Does not start and only take up as much as content space */
+/* .block {
+    background: blue;
+    color: white;
+    display: inline;
+}
+.inline {
+    background: red;
+    color: white;
+    display: block;
+} */
+
+
+/* 02. Horizontal Centering */
+
+
