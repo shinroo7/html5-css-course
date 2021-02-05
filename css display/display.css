@@ -22,6 +22,107 @@ Inline : Does not start and only take up as much as content space */
 } */
 
 
-/* 02. Horizontal Centering */
+/* 02. Horizontal Centering - when making the parent aligh in the centre, at block section only the text will be at the centre not the colour block. Inline can just use text-aligh and be centre. */
+/* body {
+    text-align: center;
+}
+.block {
+    background: blue;
+    color: white;
+    width: 150px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inline {
+    background: red;
+    color: white;
+} */
 
 
+/* 03. Block: Top Bottom Margin Respected
+Margin: Top Bottom Margin Not Respected
+Mobile Navbar
+list-style-type:property
+descendant selectors */
+/* a link is an inline element, when you add padding/margin, it might cause overlapping unless you set up the display to block */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+/* body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li {
+    list-style-type: none;
+}
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #222;
+    color: lawngreen;
+    display: block;
+    padding: 10px 10px;
+    margin: 10px;
+} */
+
+
+/* 04. inline-box - when applying margin for inline elements, the system will only do left and right. If you want the top and bottom to show the margin, you can use inline-block instead of block */
+/* a {
+    font-size: 60px;
+    background: red;
+    color: yellow;
+    margin: 10px;
+    display: inline-block;
+} */
+
+
+/* 05. Box-Sizing Border-Box */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box-1,.box-2,.box-3 {
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+.box-1 {
+    background: red;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.box-2 {
+    background: blue;
+}
+.box-3 {
+    background: green;
+    padding: 20px;
+} */
+
+
+/* 06. display:none, opacity:0 (=transparency), visibility:hidden */
+
+div {
+    background: blue;
+    margin: 10px;
+    color: white;
+}
+.none {
+    display: none;
+}
+.opacity {
+    opacity: 1;
+}
+.opacity-5 {
+    opacity: 0.51;
+}
+.opacity-0 {
+    opacity: 0;
+}
+.visibility {
+    visibility: hidden;
+}
