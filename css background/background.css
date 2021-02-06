@@ -1,0 +1,45 @@
+/* CSS Background-Image Intro 
+Background Images Setup
+Background-Image-Property
+Background-Repeat
+Background-Size
+Background-Position
+Background-Attachment
+Linear-Gradients
+Background Image Shortcuts Combined
+Linear-Gradient Colorzilla */
+
+
+/* 01. Background img: by default, the img will fill whole div by repeating.*/
+/* Last rule order */
+/* background-repeat: round; shows the number of img according to the full space. If it can only fit one img, it shows one. */
+/* background-size: cover; one img covers the whole space, might cause low quality img*/
+div {
+    height: 400px;
+    color: red;
+}
+.big-img {
+    background: url('./big.jpg');
+    background-repeat: round;
+    background-size: cover;
+}
+.small-img {
+    border: 2px solid red;
+    background: url('./small.jpeg');
+    /* background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: space; */
+    background-size: cover;
+}
+.folder-img {
+    background: url('./img/folder-img.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
