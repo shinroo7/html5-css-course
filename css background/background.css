@@ -14,7 +14,7 @@ Linear-Gradient Colorzilla */
 /* Last rule order */
 /* background-repeat: round; shows the number of img according to the full space. If it can only fit one img, it shows one. */
 /* background-size: cover; one img covers the whole space, might cause low quality img*/
-div {
+/* div {
     height: 400px;
     color: red;
 }
@@ -26,20 +26,142 @@ div {
 .small-img {
     border: 2px solid red;
     background: url('./small.jpeg');
-    /* background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-repeat: repeat-x;
     background-repeat: repeat-y;
-    background-repeat: space; */
+    background-repeat: space;
     background-size: cover;
 }
 .folder-img {
     background: url('./img/folder-img.jpeg');
     background-size: contain;
     background-repeat: no-repeat;
+} */
+
+
+/* 02. background-position */
+/* div {
+    height: 400px;
+    color: red;
 }
+.big-img {
+    background: url('./big.jpg');
+    background-size: cover;
+}
+.small-img {
+    border: 2px solid red;
+    background: url('./small.jpeg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-position: 20% 50%;
+}
+.folder-img {
+    background: url('./img/folder-img.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
 
 
+/* 03. background-attachment - fixed, the bg stays still while the text move upward*/
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div {
+    min-height: 100vh;
+    color: green;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.big-img {
+    background: url('./big.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.small-img {
+    border: 2px solid red;
+    background: url('./small.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.folder-img {
+    background: url('./big.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
 
 
+/* 04. Linear-Gradients - mix the colours and start from various angles */
+/* div {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+.one {
+    background: linear-gradient(red,
+    green);
+}
+.two {
+    background: linear-gradient(to top, red,
+    green, blue, yellow);
+}
+.three {
+    background: linear-gradient(315deg, red,
+    green);
+}
+.four {
+    background: linear-gradient(to top right, red,
+    green);
+}
+.five {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+}
+.six {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+} */
 
+
+/* 05. Background Image Shortcuts Combined
+Linear-Gradient Colorzilla  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+    color: orange;
+}
+.banner {
+    background: url(./big.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./big.jpg")center/cover no-repeat fixed;
+}
+/* You can't change the order of center/cover, or the image doesn't show. */
+.colorzilla {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e8f230+0,f93131+46,7db9e8+100&1+0,0.8+0,0.91+100 */
+background: -moz-linear-gradient(top, rgba(232,242,48,0.8) 0%, rgba(249,49,49,0.85) 46%, rgba(125,185,232,0.91) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(232,242,48,0.8) 0%,rgba(249,49,49,0.85) 46%,rgba(125,185,232,0.91) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(232,242,48,0.8) 0%,rgba(249,49,49,0.85) 46%,rgba(125,185,232,0.91) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce8f230', endColorstr='#e87db9e8',GradientType=0 ); /* IE6-9 */
+}
 
