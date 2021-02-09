@@ -5,10 +5,92 @@ Position Static
 Position Relative
 Position Absolute
 Position Fixed
-Media Quries
-Z-Index
-::Before And ::After Pseudo Elements */
+*/
 
 
+/* 01. Float Property */
+/* .banner {
+ border: 5px solid red;
+ padding: 10px;
+}
+.one {
+    float: right;
+    margin-left: 50px;
+}
+.two {
+    float: left;
+}
+p {
+    clear: both;
+} */
 
 
+/* 02 Float Property Column Layout*/
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div {
+    float: left;
+    height: 400px;
+    width: 33.33%;
+}
+.one {
+    background: red;
+}
+.two {
+    background: blue;
+}
+.three {
+    background: green;
+}
+h1 {
+    clear: both;
+} */
+
+
+/* 03. 
+Position Static
+Position Relative
+Position Absolute
+Position Fixed */
+button {
+    background: red;
+    font-size: 40px;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+div {
+    border: 3px solid red;
+    background: yellow;
+    margin-top: 40px;
+    position: relative;
+}
+/* Position: relative
+.one {
+    background: blue;
+    position: relative;
+    top: 40px;
+    left: 20rem;
+    right: 50%;
+    bottom: 20px;
+} */
+/* Position: absolute */
+.one {
+    background: blue;
+}
+.two {
+    background: green;
+    /* position: relative; */
+}
+.special {
+    background:hotpink;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+/* position absolute needs ancestors, if it can't find any (no class, div, etc.), it will depend on the body. */
