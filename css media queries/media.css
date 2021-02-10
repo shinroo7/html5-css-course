@@ -1,0 +1,165 @@
+/* CSS Media Queries
+Responsive Design
+Style Elements on different screen sizes
+min-width: --- starting from
+max-width: --- up to
+Mobile first
+*/
+
+
+/* 01. Media Queries - Responsive Design */
+/* body {
+    background: yellow;
+}
+.banner {
+    background: blue;
+}
+h1 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+} */
+
+/* When the screen width starts from 576px, the elements are changed to fit the new width size */
+/* @media screen and (min-width: 576px) {
+    body {
+        background: red;
+    }
+    .banner {
+        background: yellow;
+    }
+    h1 {
+        color: black;
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background:chartreuse;
+    }
+    .banner {
+        background:violet;
+    }
+    h1 {
+        color:yellow;
+        font-size: 60px;
+        text-align: right;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+} */
+
+/* 02. Z-Index --- z-axis, 0 is the default value
+position: static --- does not work, only works on absolute and relative*/
+/* img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.banner {
+    margin: 20px;
+    width: 80vw;
+    height: 70vh;
+    border: 5px solid red;
+    position: relative;
+}
+.one {
+    top: 0;
+    left: 0;
+    position: static;
+    z-index: 10;
+}
+.two {
+    top: 10%;
+    left: 10%;
+    z-index: 1;
+}
+.three {
+    top: 20%;
+    left: 20%;
+    z-index: 2;
+} */
+
+
+/* 03. pseudo elements ::before ::after CONTENT not element
+content:'' --- required
+img --- does not work */
+
+/* p::before {
+    content: "hello ";
+    display: block;
+    background: turquoise;
+    font-weight: bold;
+    font-size: 2rem;
+    color: tomato;
+}
+p::after {
+    content: " after ";
+    font-weight: bold;
+    font-size: 2rem;
+    color: tomato;
+    display: block;
+    background: turquoise;
+} */
+p::before {
+    content: "hello ";
+    display: block;
+    background: turquoise;
+    font-weight: bold;
+    font-size: 2rem;
+    color: tomato;
+}
+p::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background:yellowgreen;
+}
+/* img is responsive to the div. The 100% means whole div size 
+display: block helps the img to fully fill the block*/
+div {
+    width: 50vw;
+    margin: 100px auto;
+    position: relative;
+    /* border: 2px solid red; */
+}
+img {
+    width: 100%;
+    display: block;
+}
+/* img is already the content, so the pseudo elements do not work on img */
+/* img::before {
+    content: "Hello ";
+} */
+/* position: absolute looks for the ancestor (here is div), so div adds position:relative */
+div::before {
+    content: "";
+    border: 2px solid green;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    top: -40px;
+    left: -40px;
+    z-index: -2;
+    transition: all 0.5s linear;
+}
+div::after {
+    content: "";
+    background: cadetblue;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+    transition: all 0.5s linear;
+}
+div:hover::after,
+div:hover::before {
+    top: 0;
+    left: 0;
+}
