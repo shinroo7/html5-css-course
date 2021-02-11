@@ -1,0 +1,52 @@
+/* CSS Selectors Intro
+Basic Selectors
+Descendant Child Selectors
+First Line And First Letter
+:Hover Pseudo-Class Selector
+Link Pseudo-Class Selectors
+Root Preudo-Class Selectors */
+
+
+/* 01. Basic Selectors */
+/* * {
+    color: crimson;
+}
+#heading {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: darkblue;
+}
+.heading {
+    font-size: 20px;
+    text-transform: capitalize;
+    color:darkseagreen;
+}
+p {
+    letter-spacing: 15px;
+} */
+
+
+/* 02. Descendant and Child Combinators */
+/* .header h1 {
+    color: firebrick;
+} */
+/* class is more specific, even if it is on the top/bottom, it will still rewrite other two */
+/* .header > h1 {
+    color: lawngreen;
+} */
+/* class's direct child h1, only in the first div. So only the first one changes the colour. The second class in the second div has the direct child ul */
+/* div h1 {
+    color: deeppink;
+} */
+/* include all the h1 in the div */
+/* div > h1 {
+    color: deepskyblue;
+} */
+/* div is the ancestor and h1 is the descendant, adding '>' (point) means they need to directly related*/
+
+
+/* 03. ::first-line ::first-letter */
+
+
+
+
