@@ -46,7 +46,55 @@ p {
 
 
 /* 03. ::first-line ::first-letter */
+/* p::first-line {
+    font-weight: bold;
+}
+p::first-letter {
+    font-size: 3rem;
+} */
 
 
+/* 04. :hover */
+/* p:hover {
+    color: lightseagreen;
+}
+.header:hover {
+    background: blue;
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+} */
 
 
+/* 05. :link :visited (clicked on) :hover (point):active (press, not click) */
+/* a:link {
+    color: tomato;
+}
+a:visited {
+    color: teal;
+}
+a:hover {
+    color: yellowgreen;
+}
+a:active {
+    color: turquoise;
+} */
+
+/* 06. :root root element of the document html element
+general styles
+css variables */
+:root {
+    /* background: tomato; */
+    font-size: 150%;
+}
+h1 {
+    font-size: 3rem;
+}
+.absolute {
+    font-size: 24px;
+}
+.responsive {
+    font-size: 1.5rem;
+}
+/* 1 rem === 16px and it is responsive to the root and brower setting. The absolute one is not going to change */
