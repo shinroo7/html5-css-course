@@ -1,0 +1,164 @@
+/* CSS Transform,Transition,And Animations
+Transform:transition()
+Transform:scale()
+Transform:rotate()
+Transform:skew()
+Transition Property
+Multiple Transition
+Transition Delay
+Transition-Timing Function
+Animation
+Animation-Fill-Mode */
+
+
+/* 01-1. Transform:transition()*/
+
+/* div {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+.one {
+    background: tomato;
+    transform: translateX(50%);
+} */
+/* 50% is related to the width and height setting */
+/* .two {
+    background: lawngreen;
+    transform: translateY(30px);
+}
+.three {
+    background: blueviolet;
+    transform: translate(20px, 50px);
+} */
+
+
+/* 01-2. Transform: scale()*/
+/* div {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+.one {
+    background: tomato;
+    transform: scaleX(0.5);
+}
+.two {
+    background: lawngreen;
+    transform: scaleY(2);
+}
+.three {
+    background: blueviolet;
+    transform: scale(0.5, 0.5);
+} */
+
+/* 01-3. Transform: rotate(), X/Y is hard to see the direction change, Z is the often use one*/
+/* div {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+.one {
+    background: tomato;
+    transform: rotateX(95deg);
+}
+.two {
+    background: lawngreen;
+    transform: rotateZ(45deg);
+}
+.three {
+    background: blueviolet;
+    transform: rotateY(95deg);  
+} */
+
+/* 01-4. Transform: skew()*/
+/* div {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+.one {
+    background: tomato;
+    transform: skewX(40deg);
+}
+.two {
+    background: lawngreen;
+    transform: skewY(-20deg);
+}
+.three {
+    background: blueviolet;
+    transform: skew(40deg, -20deg);
+} */
+
+
+/* 02-1. Transtion: change over time
+transition-property:
+transition-duration: */
+/* div {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+div:hover {
+    background: cyan;
+}
+.one {
+    background: tomato;
+}
+.two {
+    background: lawngreen;
+}
+.three {
+    background: blueviolet; 
+    transition-property: background, border-radius;
+    transition-duration: 3s, 1s;
+}
+.three:hover {
+    border-radius: 50%;
+} */
+
+/* 02.2 transition delay, shorthand
+elements: objects, change over time, delay time*/
+/* div {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+.one {
+    background: tomato;
+}
+.two {
+    background: lawngreen;
+}
+.three {
+    background: blueviolet; 
+    transition-property: background, border-radius;
+    transition-duration: 3s, 1s;
+    transition-delay: 1.5s;
+
+    transition: background 3s 2s, border-radius 4s 1.5s;
+
+    transition: all 4s 2s;
+}
+.three:hover {
+    border-radius: 50%;
+    background: cyan;
+} */
+
+
+/* 03. How the transition takes place
+transition-time-function: (here)
+transition:all 3s here 5s;
+ease = default
+ease = slow start, fast, slow end
+linear = same speed start to end
+ease-in = slow start
+ease-out = slow end
+ease-in-out = slow start, fast, slow end */
+
+
+
+
+
+
+
