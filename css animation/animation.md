@@ -1,40 +1,35 @@
-/* CSS Transform,Transition,And Animations
-Transform:transition()
-Transform:scale()
-Transform:rotate()
-Transform:skew()
-Transition Property
-Multiple Transition
-Transition Delay
-Transition-Timing Function
-Animation
-Animation-Fill-Mode */
+# CSS Transform
+## translate(), scale(), rotate(), skew()
 
+### translate(): move objects around
 
-/* 01-1. Transform:transition()*/
-
-/* div {
+Code Example
+```
+div {
     width: 150px;
     height: 150px;
     display: inline-block;
 }
 .one {
     background: tomato;
-    transform: translateX(50%);
-} */
+    transform: translateX(50%); 
+}
 /* 50% is related to the width and height setting */
-/* .two {
+.two {
     background: lawngreen;
     transform: translateY(30px);
 }
 .three {
     background: blueviolet;
     transform: translate(20px, 50px);
-} */
+}
+```
 
+### scale(): change the size of objects
 
-/* 01-2. Transform: scale()*/
-/* div {
+Code Example
+```
+div {
     width: 150px;
     height: 150px;
     display: inline-block;
@@ -50,10 +45,16 @@ Animation-Fill-Mode */
 .three {
     background: blueviolet;
     transform: scale(0.5, 0.5);
-} */
+}
+```
 
-/* 01-3. Transform: rotate(), X/Y is hard to see the direction change, Z is the often use one*/
-/* div {
+### rotate(): change the direction of objects
+
+X/Y is hard to see the direction change, Z is the often use one
+
+Code Example
+```
+div {
     width: 150px;
     height: 150px;
     display: inline-block;
@@ -69,10 +70,14 @@ Animation-Fill-Mode */
 .three {
     background: blueviolet;
     transform: rotateY(95deg);  
-} */
+}
+```
 
-/* 01-4. Transform: skew()*/
-/* div {
+### skew(): change the objects to trapezium
+
+Code Example
+```
+div {
     width: 150px;
     height: 150px;
     display: inline-block;
@@ -88,13 +93,16 @@ Animation-Fill-Mode */
 .three {
     background: blueviolet;
     transform: skew(40deg, -20deg);
-} */
+}
+```
 
 
-/* 02-1. Transtion: change over time
-transition-property:
-transition-duration: */
-/* div {
+# CSS Transition
+## transition-property:, transition-duration:
+
+Code Example
+```
+div {
     width: 150px;
     height: 150px;
     display: inline-block;
@@ -115,11 +123,16 @@ div:hover {
 }
 .three:hover {
     border-radius: 50%;
-} */
+}
+```
 
-/* 02.2 transition delay, shorthand
-elements: objects, change over time, delay time*/
-/* div {
+## transition delay, shorthand
+
+elements: objects, change over time, delay time
+
+Code Example
+```
+div {
     width: 150px;
     height: 150px;
     display: inline-block;
@@ -135,18 +148,19 @@ elements: objects, change over time, delay time*/
     transition-property: background, border-radius;
     transition-duration: 3s, 1s;
     transition-delay: 1.5s;
-
+    /* shorter text*/
     transition: background 3s 2s, border-radius 4s 1.5s;
-
+    /* even shorter text*/
     transition: all 4s 2s;
 }
 .three:hover {
     border-radius: 50%;
     background: cyan;
-} */
+}
+```
 
+## How the transition takes place
 
-/* 03. How the transition takes place
 transition-time-function: (here)
 transition:all 3s here 5s;
 ease = default
@@ -154,9 +168,11 @@ ease = slow start, fast, slow end
 linear = same speed start to end
 ease-in = slow start
 ease-out = slow end
-ease-in-out = slow start, fast, slow end */
+ease-in-out = slow start, fast, slow end
 
-/* div {
+Code Example
+```
+div {
     width: 100px;
     height: 100px;
     background: blue;
@@ -166,9 +182,9 @@ ease-in-out = slow start, fast, slow end */
 }
 div:hover {
     transform:translateX(100px) ;
-} */
+}
 /* We can write transition: all 1s ease;, but since there is transition in all div, here we can use timing-function */
-/* .ease {
+.ease {
     transition-timing-function: ease;
 }
 .linear {
@@ -182,12 +198,14 @@ div:hover {
 }
 .ease-in-out {
     transition-timing-function: ease-in-out;
-} */
+}
+```
 
+## Transition 0 = 100%, Animation 0 1% 2%...100%
 
-/* 04. Transition 0 = 100%, Animation 0 1% 2%...100% */
-
-/* div {
+Code Example
+```
+div {
     width: 200px;
     height: 100px;
     color: white;
@@ -207,10 +225,11 @@ div:hover {
     animation-duration: 10s;
     animation-iteration-count: 2;
     animation: move 5s infinite;
-} */
+} 
+
 /* the percentage is related to the duration setting */
 
-/* @keyframes move {
+@keyframes move {
     0% {
         transform: translateX(20px);
     }
@@ -226,11 +245,15 @@ div:hover {
         transform: translateX(20px);
         background: blue;
     }
-} */
+}
+```
 
+## Animation-fill-mode
 
-/* 05. Animation-fill-mode: what values are applied by the animation outside the time it is executing */
+What values are applied by the animation outside the time it is executing
 
+Code Example
+```
 div {
     width: 200px;
     height: 100px;
@@ -243,6 +266,7 @@ div {
     animation-fill-mode: forwards;
 }
 /* instead of staying at original opacity 1, when setting of fill-mode is forward, the ending will stay at the last setting which the opacity is 0.5 */
+
 @keyframes move {
     0% {
         opacity: 0;
@@ -260,5 +284,4 @@ div {
         opacity: 0.5;
     }
 }
-
-
+```
